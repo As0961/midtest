@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="j/demo.css" rel="stylesheet">
+    <!-- Object Fit polyfill -->
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+    <!-- Lazy Load images -->
+    <!-- <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script> -->
+    <!-- Jarallax -->
+    <link href="j/jarallax.css" rel="stylesheet">
+    <script src="j/jarallax.js"></script>
+    <script src="j/jarallax-video.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!--用法
+    <div class="demo-carousel">
+        <div class="demo-carousel-item jarallax" data-speed="0.1">
+            <img class="jarallax-img" src="images/image3.jpg" alt="">
+        </div>
+        <div class="demo-carousel-item jarallax" data-speed="0.4" data-video-src="mp4:video/local-video.mp4,webm:video/local-video.webm,ogv:video/local-video.ogv">
+            <img class="jarallax-img" src="video/local-video.png" alt="">
+        </div>
+        <div class="demo-carousel-item jarallax" data-speed="0.2">
+            <img class="jarallax-img" src="images/image6.jpg" alt="">
+        </div>
+        <div class="demo-carousel-item jarallax" data-speed="0.3">
+            <img class="jarallax-img" src="images/image5.jpg" alt="">
+        </div>
+    </div>
+    -->
+    <div class="demo-gap bg-primary">
+        <div class="container">  
+        </div>
+    </div>
+    <div class="demo-gap">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+             <div class="card text-center border-info">
+                 <h2 class="card-header bg-info text-light">一般入學</h2>
+                 <div class="card-body">
+                     <div class="display-4">$3000</div>
+                     <div class="font-italic">每學期學費</div>
+                 </div>
+                 <ul class="list group">
+                     <li class="list-group-item">教學時間:半天</li>
+                     <li class="list-group-item">教學內容:40%</li>
+                     <li class="list-group-item">不含早餐;午餐;下午茶</li>
+                     <li class="list-group-item">無床鋪</li>
+                     <li class="list-group-item">
+                         <a href="#" class="btn btn-lg btn-info btn-block">訂購方案</a>
+                     </li>
+                     
+                 </ul>
+            </div>
+ 
+           </div>
+             <div class="col-lg-4 mb-4">
+                 <div class="card text-center  border-success">
+                     <h2 class="card-header bg-success text-warning ">中班入學</h2>
+                     <div class="card-body">
+                         <div class="display-4"> $3500</div>
+                         <div class="font-italic">每學期學費</div>
+                     </div>
+                     <ul class="list group">
+                        <li class="list-group-item">教學時間:整天</li>
+                        <li class="list-group-item">教學內容:75%</li>
+                        <li class="list-group-item">含早餐;午餐;不含下午茶</li>
+                        <li class="list-group-item">無床鋪</li>
+                        <li class="list-group-item">
+                            <a href="#" class="btn btn-lg btn-info btn-block">訂購方案</a>
+                        </li>
+                     </ul>
+                </div>
+     
+             </div>
+ 
+             <div class="col-lg-4 mb-4">
+                 <div class="card text-center border-warning">
+                     <h2 class="card-header bg-warning text-primary">大班入學</h2>
+                     <div class="card-body">
+                         <div class="display-4">$4000</div>
+                         <div class="font-italic">每學期學費</div>
+                     </div>
+                     <ul class="list group">
+                        <li class="list-group-item">教學時間:整天(可課後加強練習)</li>
+                        <li class="list-group-item">教學內容:100%</li>
+                        <li class="list-group-item">含早餐;午餐;下午茶</li>
+                        <li class="list-group-item">有床鋪</li>
+                        <li class="list-group-item">
+                            <a href="#" class="btn btn-lg btn-info btn-block">訂購方案</a>
+                        </li>
+                     </ul>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript">
+        // object-fit polyfill run
+        objectFitImages();
+
+        /* init Jarallax */
+        jarallax(document.querySelectorAll('.jarallax'));
+
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
+
+        /* init Flickity Carousel + Jarallax inside it */
+        // new Flickity( '.demo-carousel', {
+        //     initialIndex: 1,
+        //     autoPlay: 3000,
+        //     pauseAutoPlayOnHover: false,
+        //     pageDots: false,
+        //     prevNextButtons: false,
+        //     wrapAround: true
+        // });
+        // jarallax(document.querySelectorAll('.demo-carousel .jarallax'), {
+        //     elementInViewport: document.querySelectorAll('.demo-carousel')
+        // });
+
+        /* init Jarallax with jQuery */
+        // $('.jarallax').jarallax({
+        //     speed: 0.5,
+        //     imgWidth: 1366,
+        //     imgHeight: 768
+        // });
+    </script>
+</body>
+</html>
